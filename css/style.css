@@ -1,8 +1,11 @@
 * {
     box-sizing: border-box;
     font-family: 'Roboto Mono', monospace;
+}
+
+body {
     background-color: #f7f7f7;
-  }
+}
 
 header {
     width: 90%;
@@ -50,11 +53,42 @@ header {
     max-width: 960px;
     margin: auto;
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
     flex-wrap: wrap;
     justify-content: center;
 }
 
 .img-thumbnail {
     padding: 16px;
+    margin: auto;
+}
+
+img {
+    width: 250px;
+}
+
+.fancybox-caption__body {
+    border-radius: 2px;
+    background-color: black;
+    color: white;
+    padding: 8px;
+}
+
+/* =================================
+  Media Queries (Single column for older mobiles)
+==================================== */
+
+@media (min-width: 484px) {
+
+    .container {
+        flex-direction: row;
+    }
+
+    .img-thumbnail {
+        margin: none;
+    }
+
+    img {
+        width: 200px;
+    }
 }
