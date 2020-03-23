@@ -9,7 +9,7 @@ body {
 
 header {
     width: 90%;
-    margin: 32px auto 16px;
+    margin: 40px auto 24px;
     text-align: center;
 }
 
@@ -44,8 +44,8 @@ header {
 }
 
 /* I can't seem to make the cancel button 
-properly clear the input, so I am going 
-to hide it until I know how */
+    properly clear the input :( 
+    So I'll hide it for now*/
 
 .fuzzy::-webkit-search-cancel-button{
     display: none;
