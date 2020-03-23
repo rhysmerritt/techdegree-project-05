@@ -43,14 +43,10 @@ header {
     transition-duration: 0.15s;
 }
 
-/* I can't seem to make the cancel button 
-    properly clear the input :( 
-    So I'll hide it for now*/
 
 .fuzzy::-webkit-search-cancel-button{
-    display: none;
-    /* margin-right: 12px;
-    background-color: #cececf; */
+    margin-right: 12px;
+    background-color: #cececf;
 }
 
 .container {
@@ -70,6 +66,7 @@ header {
 
 img {
     width: 250px;
+    border-radius: 2px;
 }
 
 .fancybox-caption__body {

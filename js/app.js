@@ -16,11 +16,11 @@ $('[data-fancybox="gallery"]').fancybox({
 const $fuzzy = $('.fuzzy');
 const $images = $('img')
 
-$fuzzy.keyup(function(evt) {
-  const value = $fuzzy.val().toLowerCase();
-  $images.show();
-  if (value !== '') {
-    $images.not('[caption*="' + value + '"]').hide();
-  }
+$fuzzy.on("keyup search", function(evt) {
+	const value = $fuzzy.val().toLowerCase();
+	$images.parent().show();
+	if (value !== '') {
+	  $images.not('[caption*="' + value + '"]').parent().hide();
+	}
 });
 
