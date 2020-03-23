@@ -43,9 +43,14 @@ header {
     transition-duration: 0.15s;
 }
 
+/* I can't seem to make the cancel button 
+properly clear the input, so I am going 
+to hide it until I know how */
+
 .fuzzy::-webkit-search-cancel-button{
-    margin-right: 12px;
-    background-color: #cececf;
+    display: none;
+    /* margin-right: 12px;
+    background-color: #cececf; */
 }
 
 .container {
