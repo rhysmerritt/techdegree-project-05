@@ -20,7 +20,7 @@ $fuzzy.on("keyup search", function(evt) {
 	const value = $fuzzy.val().toLowerCase();
 	$images.parent().show();
 	if (value !== '') {
-	  $images.not('[caption*="' + value + '"]').parent().hide();
+	  $images.not('[data-caption*="' + value + '"]').parent().hide();
 	}
 });
 

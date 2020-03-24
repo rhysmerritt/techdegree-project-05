@@ -46,7 +46,6 @@ header {
 
 .fuzzy::-webkit-search-cancel-button{
     margin-right: 12px;
-    background-color: #cececf;
 }
 
 .container {
@@ -87,7 +86,7 @@ img {
     }
 
     .img-thumbnail {
-        margin: none;
+        margin: 0;
     }
 
     img {
